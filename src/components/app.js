@@ -1,11 +1,17 @@
 import React from 'react';
 import '../assets/css/app.css';
 import logo from '../assets/images/logo.svg';
+import Greeting from './greeting'
+
+const nameOfPerson = 'Dildongus'
 
 const App = () => (
     <div>
         <div className="app">
             <img src={logo} className="logo rotate"/>
+            <Greeting name={nameOfPerson} favColor="brown" favMurderWeapon="golf trophy" />
+            <Greeting name="the diarrhea" favColor="darkred" favMurderWeapon="toilet seat" />
+
             <h1>Welcome to React</h1>
         </div>
     </div>
