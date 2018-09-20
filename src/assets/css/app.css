@@ -41,3 +41,8 @@ body {
         transform: rotate(360deg);
     }
 }
+
+.component2{
+    color: darkred;
+    background-image: url('../images/5b7fdeab1900001d035028dc.jpeg')
+}
