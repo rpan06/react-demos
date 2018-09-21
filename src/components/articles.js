@@ -1,19 +1,18 @@
 import React from 'react';
-import {BrowserRouter as Router,
-    Route,
-    Link
-} from 'react-router-dom'
+import {Route,Link} from 'react-router-dom'
 import Reddit from './articles-reddit'
 
-export default props => (
-    <Router>
+export default props => {
+    console.log('props', props)
+    const path = props.match.path
+    return (
         <div>
             <ul>
                 <li>
-                    <Link to="/articles/reddit">Reddit</Link>
+                    <Link to={`${path}/reddit`}>Reddit</Link>
                 </li>
             </ul>
-            <Route path="/articles/reddit" component={Reddit}/>
+            <Route path={`${path}/reddit`} component={Reddit}/>
         </div>
-    </Router>
-)
+    )
+}

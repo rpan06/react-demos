@@ -1,5 +1,7 @@
 import React from 'react';
 
 export default props => (
-    <h1>HELLO TEST</h1>
+    <div>
+        <h1>HELLO TEST</h1>
+    </div>
 )
